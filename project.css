@@ -57,11 +57,69 @@
     box-sizing: border-box;
 }
 
+/*====================================== VARIABLES CSS ====================================*/
+:root{
+    --header-height: 3rem;
+
+/*=================================== Colors ============================================*/
+--first-color: #840ca1;
+--first-color-alt: #680486;
+--title-color: #221717b4;
+--text-color: #000000;
+--text-color-light: #a6a6a6;
+--body-color: #FBFEFD;
+--container-color: #FFFFFF;
+
+/*======================= Font and typography ===========================*/
+--body-font: sans-serif, Georgia;
+--biggest-font-size: 2.25rem;
+--h1-font-size: 2rem;
+--h2-font-size: 1.5rem;
+--h3-font-size: 2rem;
+--normal-font-size: .938rem;
+--small-font-size: .813;
+--smaller-font-size: .75rem;
+
+/*=================== Font weight ============================================*/
+--font-medium: 500;
+--font-semi-bold: 600;
+
+/*=================================== Margenes ================================================*/
+--mb-1: .5rem;
+--mb-2: 1rem;
+--mb-3: 1.5rem;
+--mb-4: 2rem;
+--mb-5: 2.5rem;
+--mb-6: 3rem;
+
+/*========================= z index ============================================*/
+--z-tooltip: 10;
+--z-fixed: 100;
+}
+
+@media screen and (min-width: 768px){
+    :root{
+        --biggest-font-size: 4rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem
+        --normal-font-size: 1rem;
+        --small-font-size: .875;
+        --smaller-font-size: .813rem;
+    }
+}
+
+/*========================= BASE ============================================*/
+
+::before, ::after{
+    box-sizing: border-box;
+}
+
 html{
     scroll-behavior: smooth;
 }
 /*========================================= Variables Dark theme =====================================*/
-body.dark-theme{
+body.dark-Theme{
     --title-color: #F2F3F2;
     --text-color: #C7D1CC;
     --body-color: #1D2521;
@@ -563,11 +621,3 @@ img{
         margin-bottom: var(--mb-3);
     }
 }
-
-
-
-
-
-
-
-
